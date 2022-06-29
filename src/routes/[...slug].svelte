@@ -3,16 +3,14 @@
 
 	export async function load({ params }) {
 		const storyblokApi = useStoryblokApi();
-
-		// let slug = "home"
-		// if (params.slug === "") {
-		// 	slug = "home"
-		// } else {
-		// 	slug = params.slug
-		// }
-		let slug = `cdn/stories/${params.slug}` 
-		const data = await storyblokApi.get(slug ? slug : 'home', { version: 'draft' });
-
+		let slug = params.slug;
+		let path = 'cdn/stories/part-2/';
+		if (slug) {
+			path += slug;
+		} else {
+			path += 'home';
+		}
+		const data = await storyblokApi.get(path, { version: 'draft' });
 		return {
 			props: { story: data.data.story }
 		};
