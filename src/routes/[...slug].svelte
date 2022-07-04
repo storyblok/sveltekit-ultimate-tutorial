@@ -4,12 +4,13 @@
 	export async function load({ params }) {
 		const storyblokApi = useStoryblokApi();
 		let slug = params.slug;
-		let path = 'cdn/stories/part-2/';
+		let path = 'cdn/stories/part-3/';
 		if (slug) {
 			path += slug;
 		} else {
 			path += 'home';
 		}
+		
 		const data = await storyblokApi.get(path, { version: 'draft' });
 		return {
 			props: { story: data.data.story }
