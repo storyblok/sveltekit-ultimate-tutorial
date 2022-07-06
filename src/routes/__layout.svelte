@@ -14,6 +14,7 @@
         grid: Grid,
         page: Page,
         teaser: Teaser,
+        header: Header
       },
     });
     
