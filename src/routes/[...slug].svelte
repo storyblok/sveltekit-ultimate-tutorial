@@ -4,7 +4,7 @@
 	export async function load({ params }) {
 		const storyblokApi = useStoryblokApi();
 		let slug = params.slug;
-		let path = 'cdn/stories/part-3/';
+		let path = 'cdn/stories/part-4/';
 		if (slug) {
 			path += slug;
 		} else {

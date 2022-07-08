@@ -1,17 +1,16 @@
-<script>
+<script >
 	import { storyblokEditable } from '@storyblok/svelte';
 
 	export let blok;
-	console.log(blok, 'blok');
 
-	export let heroClasses = blok.layout; 
-	console.log(heroClasses, 'heroclasses');
+	// export let heroClasses = blok.layout; 
+	// console.log(heroClasses, 'heroclasses');
+
 </script>
 
 <div
 	use:storyblokEditable={blok}
 	class="min-h-[500px] relative flex items-end justify-center p-9 my-6 rounded-[5px] overflow-hidden"
-    class:heroClasses
 >
 	<div class="relative z-10 text-center">
 		<h1 class="text-6xl text-white font-bold mb-3">
