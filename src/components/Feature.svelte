@@ -2,7 +2,7 @@
 	import { storyblokEditable } from '@storyblok/svelte';
 
 	export let blok;
-	console.log(blok,'feature blok')
+	
 </script>
 <div
 	use:storyblokEditable={blok}
