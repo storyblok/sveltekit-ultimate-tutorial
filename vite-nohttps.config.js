@@ -3,9 +3,9 @@ import mkcert from 'vite-plugin-mkcert'
 
 /** @type {import('vite').UserConfig} */
 const config = {
-    plugins: [sveltekit(), mkcert()],
+    plugins: [sveltekit()],
     server: {
-        https: true
+        //https: true
     },
     optimizeDeps: {
         include: ["axios"],
