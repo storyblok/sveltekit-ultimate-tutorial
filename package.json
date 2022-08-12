@@ -6,7 +6,8 @@
     "dev-nohttps": "vite dev -c vite-nohttps.config.js",
     "build": "vite build",
     "package": "svelte-kit package",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "axios": "npm add axios"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
