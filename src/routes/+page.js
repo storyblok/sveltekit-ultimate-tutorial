@@ -2,11 +2,11 @@ import { getStoryblokApi } from "@storyblok/svelte";
 import { storyblokInit, apiPlugin } from "@storyblok/svelte";
 
 /** @type {import('./$types').PageLoad} */
-export async function load({fetch}) {
+export async function load({ fetch }) {
 
   let storyblokApi = await getStoryblokApi();
 
-  if (! storyblokApi) {
+  if (!storyblokApi) {
     storyblokInit({
       accessToken: "W1vLyxT5rQ15jBpANjnv0gtt",
       use: [apiPlugin],

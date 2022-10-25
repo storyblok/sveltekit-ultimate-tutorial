@@ -1,7 +1,6 @@
 <script>
-
-  import { onMount } from "svelte";
-  import { useStoryblokBridge, StoryblokComponent } from "@storyblok/svelte";
+  import { onMount } from 'svelte';
+  import { useStoryblokBridge, StoryblokComponent } from '@storyblok/svelte';
 
   export let data;
 
@@ -9,7 +8,6 @@
     if (data.story) {
       useStoryblokBridge(data.story.id, (newStory) => (data.story = newStory));
     }
-
   });
 </script>
 
