@@ -5,6 +5,9 @@ import adapter from "@sveltejs/adapter-auto";
 const config = {
   kit: {
     adapter: adapter(),
+    alias: {
+      '@storyblok/svelte': './node_modules/@storyblok/svelte',
+    },
   },
 
   preprocess: [
