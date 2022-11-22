@@ -2,7 +2,7 @@
 
 Welcome to the Ultimate Tutorial Series for SvelteKit - you are in the right place to learn all about building a full-blown, multilingual website using Storyblok & SvelteKit. 
 
-Please follow the step by step instructions available in our documentation. You can find all the different parts on this overview page and take it from here. 
+Please follow the step by step instructions available in [Ultimate Tutorial Series](https://www.storyblok.com/tp/the-storyblok-sveltekit-ultimate-tutorial). You can find all the different parts on this overview page and take it from here. 
 
 ### Feedback 
 
