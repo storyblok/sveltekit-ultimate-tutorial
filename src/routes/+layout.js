@@ -7,7 +7,7 @@ import { apiPlugin, storyblokInit, useStoryblokApi } from "@storyblok/svelte";
 /** @type {import('./$types').LayoutLoad} */
 export async function load() {
   storyblokInit({
-    accessToken: "TxjwDdrurDCNvQwkIyREVwtt",
+    accessToken: "U4mv54ozRXmfv2EraUpiTwtt",
     use: [apiPlugin],
     components: {
       feature: Feature,
@@ -17,8 +17,13 @@ export async function load() {
     },
   });
   let storyblokApi = await useStoryblokApi();
+  const dataConfig = await storyblokApi.get('cdn/stories/config/', {
+    version: 'draft',
+    resolve_links: 'url'
+  });
 
   return {
     storyblokApi: storyblokApi,
+    header: dataConfig.data.story.content.header_menu
   };
 }

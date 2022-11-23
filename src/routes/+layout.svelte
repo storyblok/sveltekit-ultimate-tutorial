@@ -1,9 +1,11 @@
 <script>
-  import '../app.css';
-  import Header from "../components/Header.svelte";
+	import '../app.css';
+	import Header from '../components/Header.svelte';
+	export let data;
+
 </script>
 
 <main>
-  <Header />
-  <slot />
+	<Header header={data.header} />
+	<slot />
 </main>
