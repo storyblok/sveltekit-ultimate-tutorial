@@ -2,18 +2,20 @@ import Feature from "../components/Feature.svelte";
 import Grid from "../components/Grid.svelte";
 import Page from "../components/Page.svelte";
 import Teaser from "../components/Teaser.svelte";
+import Hero from "../components/Hero.svelte";
 import { apiPlugin, storyblokInit, useStoryblokApi } from "@storyblok/svelte";
 
 /** @type {import('./$types').LayoutLoad} */
 export async function load() {
   storyblokInit({
-    accessToken: "U4mv54ozRXmfv2EraUpiTwtt",
+    accessToken: "u2fPkA4eCxmoae9rZlsqVgtt",
     use: [apiPlugin],
     components: {
       feature: Feature,
       grid: Grid,
       page: Page,
       teaser: Teaser,
+      hero: Hero
     },
   });
   let storyblokApi = await useStoryblokApi();
