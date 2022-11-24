@@ -2,7 +2,9 @@
 
 Welcome to the Ultimate Tutorial Series for SvelteKit - you are in the right place to learn all about building a full-blown, multilingual website using Storyblok & SvelteKit.
 
-Please follow the step by step instructions available in [Ultimate Tutorial Series](https://www.storyblok.com/tp/the-storyblok-sveltekit-ultimate-tutorial). You can find all the different parts on this overview page and take it from here. The parts are:
+
+Please follow the step by step instructions available in [Ultimate Tutorial Series](https://www.storyblok.com/tp/the-storyblok-sveltekit-ultimate-tutorial). You can find all the different parts on this overview page and take it from here.
+The parts are:
 
 - Part 1: [Add a headless CMS to SvelteKit in 5 minutes](https://www.storyblok.com/tp/add-a-headless-cms-to-svelte-in-5-minutes) - [Source Code](https://github.com/storyblok/sveltekit-ultimate-tutorial-series/tree/part-1-sveltekit-ut)
 - Part 2: [Render Storyblok Stories Dynamically in SvelteKit](https://www.storyblok.com/tp/render-storyblok-stories-dynamically-in-sveltekit) - [Source Code](https://github.com/storyblok/sveltekit-ultimate-tutorial-series/tree/part-2-sveltekit-ut)
