@@ -1,16 +1,13 @@
-<script >
+<script>
 	import { storyblokEditable } from '@storyblok/svelte';
-
 	export let blok;
-
-	let heroClasses = blok.layout === 'constrained' ? 'container mx-auto' : ''
-	console.log(blok.layout, 'blok.layout')
-	console.log(heroClasses, 'heroClasses')
+	let heroClasses = blok.layout === 'constrained' ? 'container mx-auto' : '';
 </script>
 
 <div
 	use:storyblokEditable={blok}
-	class={"min-h-[500px] relative flex items-end justify-center p-9 my-6 rounded-[5px] overflow-hidden" + `${heroClasses}`}
+	class={'min-h-[500px] relative flex items-end justify-center p-9 my-6 rounded-[5px] overflow-hidden ' +
+		`${heroClasses}`}
 >
 	<div class="relative z-10 text-center">
 		<h1 class="text-6xl text-white font-bold mb-3">

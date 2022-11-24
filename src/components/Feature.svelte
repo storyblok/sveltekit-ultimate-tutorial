@@ -2,8 +2,8 @@
 	import { storyblokEditable } from '@storyblok/svelte';
 
 	export let blok;
-	
 </script>
+
 <div
 	use:storyblokEditable={blok}
 	class="w-full bg-[#f7f6fd] rounded-[5px] text-center overflow-hidden"
