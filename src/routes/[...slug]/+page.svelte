@@ -6,13 +6,16 @@
 
 	onMount(() => {
 		if (data.story) {
-			useStoryblokBridge(data.story.id, (newStory) => (data.story = newStory));
+			const resolveRelations = ['popular-articles.articles'];
+			useStoryblokBridge(data.story.id, (newStory) => (data.story = newStory), {
+				resolveRelations: resolveRelations
+			});
 		}
 	});
 </script>
 
 <svelte:head>
-  <title>{data.story.name}</title>
+	<title>{data.story.name}</title>
 </svelte:head>
 <div>
 	{#if data.story}

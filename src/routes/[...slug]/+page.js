@@ -8,8 +8,13 @@ export async function load({ params, parent }) {
   } else {
     path += 'home';
   }
+  const resolveRelations = ['popular-articles.articles']
   const dataStory = await storyblokApi.get(path, {
-    version: 'draft'
+    version: 'draft',
+    resolve_relations: resolveRelations,
+  },
+  {
+      resolveRelations,
   });
 
   return {
