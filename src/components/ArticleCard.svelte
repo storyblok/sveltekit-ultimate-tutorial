@@ -1,9 +1,10 @@
 <script>
+  import { storyblokEditable } from '@storyblok/svelte';
 	export let article;
 	export let slug;
 </script>
 
-<a href="/{slug}" class="w-full h-full bg-[#f7f6fd] rounded-[5px] text-center overflow-hidden">
+<a href="/{slug}"  use:storyblokEditable={article} class="w-full h-full bg-[#f7f6fd] rounded-[5px] text-center overflow-hidden">
 	<img
 		src="{article.image.filename}/m/600x0"
 		alt={article.image.alt}
