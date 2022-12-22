@@ -5,6 +5,7 @@ import Teaser from "../components/Teaser.svelte";
 import Hero from "../components/Hero.svelte";
 import Article from "../components/Article.svelte";
 import PopularArticles from "../components/PopularArticles.svelte";
+import AllArticles from "../components/AllArticles.svelte";
 import { apiPlugin, storyblokInit, useStoryblokApi } from "@storyblok/svelte";
 
 /** @type {import('./$types').LayoutLoad} */
@@ -19,7 +20,8 @@ export async function load() {
       teaser: Teaser,
       hero: Hero,
       article: Article,
-      'popular-articles': PopularArticles
+      'popular-articles': PopularArticles,
+      'all-articles': AllArticles
     },
   });
   let storyblokApi = await useStoryblokApi();

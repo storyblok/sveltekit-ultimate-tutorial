@@ -12,9 +12,6 @@ export async function load({ params, parent }) {
   const dataStory = await storyblokApi.get(path, {
     version: 'draft',
     resolve_relations: resolveRelations,
-  },
-  {
-      resolveRelations,
   });
 
   return {
