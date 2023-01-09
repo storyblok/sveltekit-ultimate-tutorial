@@ -16,7 +16,7 @@
     "postcss": "^8.4.14",
     "postcss-load-config": "^4.0.1",
     "svelte": "^3.52.0",
-    "svelte-preprocess": "^4.10.7",
+    "svelte-preprocess": "^5.0.0",
     "tailwindcss": "^3.1.4",
     "vite": "^4.0.0",
     "vite-plugin-mkcert": "^1.10.1"
@@ -24,6 +24,6 @@
   },
   "type": "module",
   "dependencies": {
-    "@storyblok/svelte": "^2.3.6"
+    "@storyblok/svelte": "^2.4.0"
   }
 }
