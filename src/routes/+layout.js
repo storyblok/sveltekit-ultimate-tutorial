@@ -15,6 +15,13 @@ export async function load() {
       page: Page,
       teaser: Teaser,
     },
+    // if you are using a space located in US region
+    // you have to use apiOptions.region:
+    /*
+    apiOptions: {
+      region: "us" // region code here
+    }
+    */
   });
   let storyblokApi = await useStoryblokApi();
   const dataConfig = await storyblokApi.get('cdn/stories/config/', {
