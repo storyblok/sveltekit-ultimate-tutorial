@@ -4,6 +4,6 @@
 	export let blok;
 </script>
 
-<div use:storyblokEditable={blok} class="py-32 text-6xl text-[#50b0ae] font-bold text-center">
+<h3 use:storyblokEditable={blok} class="py-32 text-6xl text-[#50b0ae] font-bold text-center">
 	{blok.headline}
-</div>
+</h3>
