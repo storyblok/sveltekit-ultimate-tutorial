@@ -10,12 +10,12 @@
 		`${heroClasses}`}
 >
 	<div class="relative z-10 text-center">
-		<h1 class="text-6xl text-white font-bold mb-3">
+		<h2 class="text-6xl text-white font-bold mb-3">
 			{blok.headline}
-		</h1>
-		<h2 class="text-4xl text-white font-light">
-			{blok.subheadline}
 		</h2>
+		<h3 class="text-4xl text-white font-light">
+			{blok.subheadline}
+		</h3>
 	</div>
 	<img
 		src={blok.background_image.filename}
