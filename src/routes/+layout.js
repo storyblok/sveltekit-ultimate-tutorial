@@ -15,7 +15,10 @@ export async function load() {
 			page: Page,
 			teaser: Teaser
 		},
-		https: true
+		https: true,
+    apiOptions: {
+      region: ''
+    }
 	});
 	let storyblokApi = await useStoryblokApi();
 
