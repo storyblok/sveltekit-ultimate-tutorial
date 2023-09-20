@@ -6,7 +6,8 @@
 
   onMount(() => {
     if (data.story) {
-      useStoryblokBridge(data.story.id, (newStory) => (data.story = newStory));
+      useStoryblokBridge(data.story.id, (newStory) => (data.story = newStory),
+      {customParent: "https://app.storyblok.com"});
     }
   });
 </script>
