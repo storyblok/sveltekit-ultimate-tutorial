@@ -11,7 +11,7 @@ import { apiPlugin, storyblokInit, useStoryblokApi } from '@storyblok/svelte';
 /** @type {import('./$types').LayoutLoad} */
 export async function load() {
 	storyblokInit({
-		accessToken: 'MX4ACP2TErhMWLJh8QIFlwtt',
+		accessToken: 'xr4OhJ2GGQ6Oco2ugxQn0Att',
 		use: [apiPlugin],
 		components: {
 			feature: Feature,

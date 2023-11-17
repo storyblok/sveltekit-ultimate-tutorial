@@ -9,7 +9,8 @@
 		const { data } = await storyblokApi.get('cdn/stories', {
 			version: 'draft',
 			starts_with: 'blog',
-			is_startpage: false
+			is_startpage: false, 
+			language
 		});
 		articles = data.stories;
 	});
