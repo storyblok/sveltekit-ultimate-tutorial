@@ -2,6 +2,10 @@
 	import ArticleCard from './ArticleCard.svelte';
 	import { onMount } from 'svelte';
 	import { useStoryblokApi } from '@storyblok/svelte';
+	import { getContext } from 'svelte';
+
+	const lang = getContext('lang');
+
 	export let blok;
 	let articles = [];
 	onMount(async () => {
@@ -10,7 +14,7 @@
 			version: 'draft',
 			starts_with: 'blog',
 			is_startpage: false, 
-			language
+			language: $lang
 		});
 		articles = data.stories;
 	});
