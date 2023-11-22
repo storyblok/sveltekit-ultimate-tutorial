@@ -10,7 +10,7 @@
     "axios": "npm add axios"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^2.0",
+    "@sveltejs/adapter-auto": "^2.1",
     "@sveltejs/kit": "^1.27",
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.31",
