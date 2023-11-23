@@ -3,6 +3,7 @@
 	import { useStoryblokBridge, StoryblokComponent } from '@storyblok/svelte';
 	import { setContext } from 'svelte';
 	import { writable } from 'svelte/store';
+	import Header from '../../components/Header.svelte';
 
 	export let data;
 
@@ -14,7 +15,7 @@
 		if (data.story) {
 			const resolveRelations = ['popular-articles.articles'];
 			useStoryblokBridge(data.story.id, (newStory) => (data.story = newStory), {
-				resolveRelations: resolveRelations, 
+				resolveRelations: resolveRelations,
 				preventClicks: true
 			});
 		}
@@ -24,6 +25,7 @@
 <svelte:head>
 	<title>{data.story.name}</title>
 </svelte:head>
+<Header header={data.header} />
 {#key data}
 	<div>
 		{#if data.story}

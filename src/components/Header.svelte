@@ -1,3 +1,7 @@
+<script>
+  import LanguageSwitcher from './LanguageSwitcher.svelte';
+</script>
+
 <header class="w-full h-24 bg-[#f7f6fd]">
 	<div class="container h-full mx-auto flex items-center justify-between">
 		<a href="/home">
@@ -13,5 +17,6 @@
 					</li>
 				</ul>
 			</nav>
+		<LanguageSwitcher />
 	</div>
 </header>
