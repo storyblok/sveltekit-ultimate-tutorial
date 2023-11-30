@@ -1,5 +1,5 @@
 <script>
-  import LanguageSwitcher from './LanguageSwitcher.svelte';
+	const languages = ['en', 'es']
 </script>
 
 <header class="w-full h-24 bg-[#f7f6fd]">
@@ -15,8 +15,19 @@
 					<li class="hover:text-[#50b0ae]">
 						<a href="/blog">Blog</a>
 					</li>
+					{#each languages as lang}
+						<li>
+							<a class="underline underline-offset-4 decoration-4 active:text-[#50b0ae]" 
+							href={`/${lang}/home`}>{lang}</a>
+						</li>
+					{/each}
 				</ul>
 			</nav>
-		<LanguageSwitcher />
 	</div>
 </header>
+
+<!-- <style lang="postcss">
+	.nav a.active {
+	  underline underline-offset-4 decoration-4 decoration-[#50b0ae];
+	}
+</style> -->

@@ -28,8 +28,8 @@ export async function load({ params, parent, url }) {
     version: 'draft',
     resolve_relations: resolveRelations, 
     language: language
-  });  
-
+  });
+  
   return {
     story: dataStory.data.story,
     language: language
