@@ -17,7 +17,7 @@
     "postcss-load-config": "^4.0.2",
     "svelte": "^3.59.2",
     "svelte-preprocess": "^5.1.1",
-    "tailwindcss": "^3.3.5",
+    "tailwindcss": "^3.3.6",
     "typescript": "^5.3.2",
     "vite": "^4.4.9",
     "vite-plugin-mkcert": "^1.17.1"
