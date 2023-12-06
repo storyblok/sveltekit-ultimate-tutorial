@@ -17,7 +17,7 @@
 					</li>
 					{#each languages as lang}
 						<li>
-							<a class="underline underline-offset-4 decoration-4 active:text-[#50b0ae]" 
+							<a class:active={true}
 							href={`/${lang}/home`}>{lang}</a>
 						</li>
 					{/each}
@@ -26,8 +26,11 @@
 	</div>
 </header>
 
-<!-- <style lang="postcss">
-	.nav a.active {
-	  underline underline-offset-4 decoration-4 decoration-[#50b0ae];
+<style>
+	nav a {
+	  background-color: red;
 	}
-</style> -->
+	nav a.active {
+	 background-color: blue;
+	}
+</style>

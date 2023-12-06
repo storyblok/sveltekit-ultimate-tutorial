@@ -9,7 +9,6 @@ const config = {
 			'@storyblok/svelte': './node_modules/@storyblok/svelte'
 		}
 	},
-
 	preprocess: vitePreprocess()
 };
 
