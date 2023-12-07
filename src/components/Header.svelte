@@ -1,5 +1,7 @@
 <script>
+	import { getContext } from "svelte";
 	const languages = ['en', 'es']
+	let currentLang = getContext('lang');
 </script>
 
 <header class="w-full h-24 bg-[#f7f6fd]">
@@ -17,8 +19,8 @@
 					</li>
 					{#each languages as lang}
 						<li>
-							<a class:active={true}
-							href={`/${lang}/home`}>{lang}</a>
+							<a data-sveltekit-reload class:active={$currentLang === lang}
+							href={`/${lang}/home`} class="hover:text-[#50b0ae]" >{lang}</a>
 						</li>
 					{/each}
 				</ul>
@@ -27,10 +29,7 @@
 </header>
 
 <style>
-	nav a {
-	  background-color: red;
-	}
 	nav a.active {
-	 background-color: blue;
+		color: #50b0ae;
 	}
 </style>
