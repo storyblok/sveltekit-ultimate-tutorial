@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^2.1",
-    "@sveltejs/kit": "^1.30",
+    "@sveltejs/kit": "^2.3",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.33",
     "postcss-load-config": "^4.0.2",
