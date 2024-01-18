@@ -24,7 +24,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@storyblok/svelte": "^3",
+    "@storyblok/svelte": "^4",
     "@vitejs/plugin-basic-ssl": "^1.0.2"
   }
 }
