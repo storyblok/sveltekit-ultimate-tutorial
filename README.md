@@ -1,3 +1,7 @@
+> [!WARNING]
+> This repository is no longer maintained.
+> For a current Svelte + Storyblok starter, use [blueprint-core-svelte](https://github.com/storyblok/blueprint-core-svelte).
+
 # Ultimate Tutorial Series for SvelteKit
 
 Welcome to the Ultimate Tutorial Series for SvelteKit - you are in the right place to learn all about building a full-blown, multilingual website using Storyblok & SvelteKit.
